@@ -1,10 +1,10 @@
 const createError = require('http-errors');
 const express = require('express');
 const path = require('path');
-// const cookieParser = require('cookie-parser');
+const cookieParser = require('cookie-parser');
 const logger = require('morgan');
-// const session = require('express-session');
-// const FileStore = require('session-file-store')(session);
+const session = require('express-session');
+const FileStore = require('session-file-store')(session);
 
 const passport = require('passport');
 const config = require('./config');
